@@ -1,0 +1,687 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: 0;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 100px;
+    height: 80%;
+    background: transparent;
+    text-align: center;
+    color: #303238;
+    margin-top: 75px;
+    border-right: 2px solid;
+    z-index: 1;
+}
+
+.sidebar header{
+    margin-bottom: 120px;
+    margin-top: -40px;
+    font-size: 30px;
+}
+
+.logo{
+    font-size: 70px;
+    color: #e36065;
+}
+
+.sidebar li{
+    margin:40px 0;
+}
+
+.navlinks{
+    padding: 10px;
+    padding-top: 15px;
+    color: #303238;
+}
+
+.navlinks:hover{
+    color: #fdfcf7;
+    background-color: #e36065;
+    border-radius: 100%;
+}
+
+.container{
+    position: fixed;
+    padding-left: 15%;
+    padding-top: 3%;
+    width: 50%;
+    height: 100%;
+    font-family: monospace;
+    background-color: #edeae1;
+}
+.subContainer{
+    width: 80%;
+}
+
+.subContainer h1{
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+
+.subContainer span{
+    color: #e36065;
+}
+
+.subContainer h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.subContainer p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.subContainer button{
+    margin-top: 10px;
+    width:100px; 
+    position:relative;
+    padding: 7px 0px;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    align-items: right;
+    font-family: monospace;
+    border: 2px solid #303238;
+    background-color: transparent;
+}
+
+.subContainer button:hover{
+    background-color: #e36065;
+    border-color: #e36065;
+    color: #fdfcf7;
+}
+
+.bookContainer p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.bookCards{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 20%;
+    margin-right: 30px;
+}
+
+.card img{
+    width: 120px;
+    margin-bottom: 10px;
+    box-shadow: -5px 5px 5px #888888;
+    transition: transform .2s;
+}
+
+.card img:hover{
+    transform: scale(1.2);
+}
+
+.card p{
+    font-size: 12px;
+    width: 80%;
+}
+
+.wrapper{
+    position: fixed;
+    left: 70%;
+    top: 20%;
+    width: 25%;
+    margin: auto 0;
+    padding: 20px 0;
+    font-family: monospace;
+}
+
+.wrapper h1{
+    font-size: 20px;
+}
+
+.login, .newUser{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login h1{
+    margin-bottom: 40px;
+}
+.login p{
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.newUser h1{
+    margin-bottom: 40px;
+}
+
+.group{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formInput{
+    width: 90%;
+    height: 40px;
+    font-size: 16px;
+    transition: 0.6s;
+    border: none;
+    border-bottom: 2px solid #CCC;
+    font-family: monospace;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid #e36065;
+    }
+}
+
+.formButton{
+    cursor: pointer;
+    margin-top: 10px;
+    width:100px; 
+    position:relative;
+    padding: 7px 0px;
+    border-radius: 20px;
+    font-family: monospace;
+    align-items: right;
+    border: 2px solid #e36065;
+    background-color: #e36065;
+}
+
+.formButton:hover{
+    background-color: #fdfcf7;
+}
+
+.formButton2{
+    cursor: pointer;
+    width:100px; 
+    position:relative;
+    padding: 7px 0px;
+    border-radius: 20px;
+    align-items: right;
+    font-family: monospace;
+    border: 2px solid #e36065;
+    background-color: transparent;
+}
+
+.formButton2:hover{
+    background-color: #e36065;
+}
+
+.buttonDiv{
+    align-items: center;
+}
+
+.toggleButton{
+    margin-top: 30px;
+    width:100px; 
+    position:relative;
+    padding: 7px 0px;
+    border: none;
+    background-color: transparent;
+    font-family: monospace;
+}
+
+.toggleButton:hover{
+    color: #e36065;
+}
+
+#rentButton{
+    cursor: pointer;
+    width:140px; 
+    position:relative;
+    padding: 7px 0px;
+    border-radius: 20px;
+    align-items: right;
+    top:50%; 
+    left:78%;
+    font-family: monospace;
+    border: 2px solid #e36065;
+    background-color: transparent;
+}
+
+#rentButton:hover{
+    background-color: #e36065;
+}
+
+#rentButton2{
+    cursor: pointer;
+    width:100px; 
+    position:relative;
+    padding: 7px 0px;
+    border-radius: 20px;
+    align-items: right;
+    top:50%; 
+    left:79%;
+    font-family: monospace;
+    border: 2px solid #e36065;
+    background-color: #e36065;
+}
+
+#rentButton2:hover{
+    background-color: #fdfcf7;
+}
+
+.book {
+    --color: #e36065;
+    --duration: 6.8s;
+    width: 32px;
+    height: 12px;
+    position: relative;
+    margin: 32px 0 0 0;
+    zoom: 1.5;
+  }
+  .book .inner {
+    width: 32px;
+    height: 12px;
+    position: relative;
+    transform-origin: 2px 2px;
+    transform: rotateZ(-90deg);
+    animation: book var(--duration) ease infinite;
+  }
+  .book .inner .left,
+  .book .inner .right {
+    width: 60px;
+    height: 4px;
+    top: 0;
+    border-radius: 2px;
+    background: #e36065;
+    position: absolute;
+  }
+  .book .inner .left:before,
+  .book .inner .right:before {
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: inherit;
+    position: absolute;
+    top: -10px;
+    left: 6px;
+  }
+  .book .inner .left {
+    right: 28px;
+    transform-origin: 58px 2px;
+    transform: rotateZ(90deg);
+    animation: left var(--duration) ease infinite;
+  }
+  .book .inner .right {
+    left: 28px;
+    transform-origin: 2px 2px;
+    transform: rotateZ(-90deg);
+    animation: right var(--duration) ease infinite;
+  }
+  .book .inner .middle {
+    width: 32px;
+    height: 12px;
+    border: 4px solid #e36065;
+    border-top: 0;
+    border-radius: 0 0 9px 9px;
+    transform: translateY(2px);
+  }
+  .book ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
+  .book ul li {
+    height: 4px;
+    border-radius: 2px;
+    transform-origin: 100% 2px;
+    width: 48px;
+    right: 0;
+    top: -10px;
+    position: absolute;
+    background: #e36065;
+    transform: rotateZ(0deg) translateX(-18px);
+    animation-duration: var(--duration);
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  .book ul li:nth-child(0) {
+    animation-name: page-0;
+  }
+  .book ul li:nth-child(1) {
+    animation-name: page-1;
+  }
+  .book ul li:nth-child(2) {
+    animation-name: page-2;
+  }
+  .book ul li:nth-child(3) {
+    animation-name: page-3;
+  }
+  .book ul li:nth-child(4) {
+    animation-name: page-4;
+  }
+  .book ul li:nth-child(5) {
+    animation-name: page-5;
+  }
+  .book ul li:nth-child(6) {
+    animation-name: page-6;
+  }
+  .book ul li:nth-child(7) {
+    animation-name: page-7;
+  }
+  .book ul li:nth-child(8) {
+    animation-name: page-8;
+  }
+  .book ul li:nth-child(9) {
+    animation-name: page-9;
+  }
+  .book ul li:nth-child(10) {
+    animation-name: page-10;
+  }
+  .book ul li:nth-child(11) {
+    animation-name: page-11;
+  }
+  .book ul li:nth-child(12) {
+    animation-name: page-12;
+  }
+  .book ul li:nth-child(13) {
+    animation-name: page-13;
+  }
+  .book ul li:nth-child(14) {
+    animation-name: page-14;
+  }
+  .book ul li:nth-child(15) {
+    animation-name: page-15;
+  }
+  .book ul li:nth-child(16) {
+    animation-name: page-16;
+  }
+  .book ul li:nth-child(17) {
+    animation-name: page-17;
+  }
+  .book ul li:nth-child(18) {
+    animation-name: page-18;
+  }
+  
+  @keyframes page-0 {
+    4% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    13%, 54% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    63% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-1 {
+    5.86% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    14.74%, 55.86% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    64.74% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-2 {
+    7.72% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    16.48%, 57.72% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    66.48% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-3 {
+    9.58% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    18.22%, 59.58% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    68.22% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-4 {
+    11.44% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    19.96%, 61.44% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    69.96% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-5 {
+    13.3% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    21.7%, 63.3% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    71.7% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-6 {
+    15.16% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    23.44%, 65.16% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    73.44% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-7 {
+    17.02% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    25.18%, 67.02% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    75.18% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-8 {
+    18.88% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    26.92%, 68.88% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    76.92% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-9 {
+    20.74% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    28.66%, 70.74% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    78.66% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-10 {
+    22.6% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    30.4%, 72.6% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    80.4% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-11 {
+    24.46% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    32.14%, 74.46% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    82.14% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-12 {
+    26.32% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    33.88%, 76.32% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    83.88% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-13 {
+    28.18% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    35.62%, 78.18% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    85.62% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-14 {
+    30.04% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    37.36%, 80.04% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    87.36% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-15 {
+    31.9% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    39.1%, 81.9% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    89.1% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-16 {
+    33.76% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    40.84%, 83.76% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    90.84% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-17 {
+    35.62% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    42.58%, 85.62% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    92.58% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes page-18 {
+    37.48% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+    44.32%, 87.48% {
+      transform: rotateZ(180deg) translateX(-18px);
+    }
+    94.32% {
+      transform: rotateZ(0deg) translateX(-18px);
+    }
+  }
+  @keyframes left {
+    4% {
+      transform: rotateZ(90deg);
+    }
+    10%, 40% {
+      transform: rotateZ(0deg);
+    }
+    46%, 54% {
+      transform: rotateZ(90deg);
+    }
+    60%, 90% {
+      transform: rotateZ(0deg);
+    }
+    96% {
+      transform: rotateZ(90deg);
+    }
+  }
+  @keyframes right {
+    4% {
+      transform: rotateZ(-90deg);
+    }
+    10%, 40% {
+      transform: rotateZ(0deg);
+    }
+    46%, 54% {
+      transform: rotateZ(-90deg);
+    }
+    60%, 90% {
+      transform: rotateZ(0deg);
+    }
+    96% {
+      transform: rotateZ(-90deg);
+    }
+  }
+  @keyframes book {
+    4% {
+      transform: rotateZ(-90deg);
+    }
+    10%, 40% {
+      transform: rotateZ(0deg);
+      transform-origin: 2px 2px;
+    }
+    40.01%, 59.99% {
+      transform-origin: 30px 2px;
+    }
+    46%, 54% {
+      transform: rotateZ(90deg);
+    }
+    60%, 90% {
+      transform: rotateZ(0deg);
+      transform-origin: 2px 2px;
+    }
+    96% {
+      transform: rotateZ(-90deg);
+    }
+  }  
+
+.full-screen-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #edeae1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }

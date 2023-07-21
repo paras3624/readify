@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/831edcd590.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/library-style.css">
+    <title>Readify</title>
+</head>
+<body style="background-color: #fdfcf7;">
+
+  <div class="sidebar">
+    <header>Rf<span class="logo">.</span></header>
+    <ul>
+        <li><a href="../index.html" class="navlinks"><i class="fa-solid fa-house" style="font-size: 25px;"></i></a></li>
+        <li><a href="library.html" class="navlinks"><i class="fa-solid fa-book" style="font-size: 25px;"></i></a></li>
+        <li><a href="rent.html" class="navlinks"><i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="mainContainer">
+    <div id="selectedDataTable">
+      <h1>Selected Books</h1>
+    
+      <table id="selectedTable">
+        <thead>
+          <tr>
+            <th>Serial No.</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Published Date</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody id="selectedTableBody">
+        </tbody>
+      </table>
+    </div>
+    <button id="rentButton">Back to library</button>
+    <button id="rentButton2">Rent</button>
+  </div>
+
+<script src="../javascript/rent.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/831edcd590.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Readify</title>
+</head>
+<body style="background-color: #fdfcf7;">
+    <div class="full-screen-loader" id="loader">
+        <div class="book">
+            <div class="inner">
+                <div class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
+            </div>
+            <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <div class="sidebar">
+        <header>Rf<span class="logo">.</span></header>
+        <ul>
+            <li><a href="index.html" class="navlinks"><i class="fa-solid fa-house" style="font-size: 25px;"></i></a></li>
+            <li><a href="html/library.html" class="navlinks"><i class="fa-solid fa-book" style="font-size: 25px;"></i></a></li>
+            <li><a href="html/rent.html" class="navlinks"><i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="subContainer">
+            <h1>Welcome to <span>Readify</span></h1>
+            <h3>The Gaurdian of Knowledge</h3>
+            <p>"Books are gateways to knowledge, imagination, and empathy, empowering individuals to grow, learn, and connect with the world."</p>
+            <button id="indexButton">Rent Now!</button>
+        </div>
+        <div class="bookContainer">
+            <p>Popular Now</p>
+            <div class="bookCards">
+                <div class="card">
+                    <img src="../images/book1.jpg" alt="">
+                    <p>One for the Money</p>
+                </div>
+                <div class="card">
+                    <img src="../images/book2.webp" alt="">
+                    <p>The Lion, the Witch and the Wardrobe</p>
+                </div>
+                <div class="card">
+                    <img src="../images/book3.webp" alt="">
+                    <p>Binti</p>
+                </div>
+                <div class="card">
+                    <img src="../images/book4.webp" alt="">
+                    <p>Outlander</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="login"  id="loginForm">
+            <h1>Login</h1>
+            <form action="/login" method="post">
+                <p class="group">
+                    <input type="text" id="username" class="formInput" name="username" placeholder="Username" required>
+                </p>
+                <p class="group">
+                    <input type="password" id="password" class="formInput" name="password" placeholder="Password" required>
+                </p>
+                <button type="submit" class="formButton">Log In</button>
+            </form>
+            <p>Or log in with:</p>
+            <div>
+            <button class="formButton2">Gmail</button>
+            <button class="formButton2">Facebook</button>
+            </div>
+            <div class="buttonDiv">
+                <button class="toggleButton" onclick="toggleNewUserForm()">New user?</button>
+            </div>
+        </div>
+        <div class="newUser" id="newUserForm" style="display: none;">
+            <h1>New User</h1>
+            <form action="" method="POST" >
+                <p class="group">
+                    <input type="text" id="name" class="formInput" name="name" placeholder="Name" required>
+                </p>
+                <p class="group">
+                    <input type="email" id="email" class="formInput" name="emailID" placeholder="Email" required>
+                </p>
+                <p class="group">
+                    <input type="tel" id="mobile" class="formInput" name="mobile" placeholder="Mobile Number" required>
+                </p>
+                <button type="submit" class="formButton">Log In</button>
+            </form>
+            <div class="buttonDiv">
+                <button class="toggleButton" onclick="toggleNewUserForm()">Already an exisitng user?</button>
+            </div>
+        </div>
+    </div>
+<script src="../javascript/script.js"></script>
+<script>
+    document.getElementById("indexButton").onclick = function () {
+  location.href = "/html/library.html";
+};
+</script>
+<script>
+    function toggleNewUserForm() {
+      const loginForm = document.getElementById("loginForm");
+      const newUserForm = document.getElementById("newUserForm");
+      loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+      newUserForm.style.display = newUserForm.style.display === "none" ? "block" : "none";
+    }
+  </script>
+  <script src="../javascript/loading-page.js"></script>
+<script>
+
+    function validateEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+    }
+
+    function validateNewUserForm() {
+        const newUserEmail = document.getElementById("email").value;
+        if (!validateEmail(newUserEmail)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
